@@ -102,14 +102,14 @@
         private void FetchData()
         {
             // HTMLMarkupTemplate from DS?
-            htmlMarkupTemplate = System.IO.File.ReadAllText(@"C:\Users\Administrator\Downloads\html-newAccount.html");
+            //htmlMarkupTemplate = System.IO.File.ReadAllText(@"C:\Users\Administrator\Downloads\html-newAccount.html");
 
             // Language strings from DS as XML
-            stringsText = System.IO.File.ReadAllText(@"C:\Users\Administrator\Downloads\strings-newAccount.xml");
+            stringsText = System.IO.File.ReadAllText(@"C:\temp\strings-newAccount.xml");
 
             xdoc = XDocument.Parse(stringsText);
-            htmlDoc.LoadHtml(htmlMarkupTemplate);
-            htmlDoc.Load(@"C:\Users\Administrator\Downloads\html-newAccount.html");
+            //htmlDoc.LoadHtml(htmlMarkupTemplate);
+            htmlDoc.Load(@"C:\temp\html-newAccount.html");
         }
 
         // PUT api/values/5
